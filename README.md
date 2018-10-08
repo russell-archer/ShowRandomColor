@@ -1,23 +1,24 @@
 # ShowRandomColor
-Demo of Siri shortcuts for iOS 12 using Intents
+## Demo of Siri shortcuts for iOS 12 using Intents
 
-Overview of how to implement Siri shortcuts
+## Overview of how to implement Siri shortcuts
 There are two approaches to creating Siri shortcuts:
 
-NSUserActivity
+**NSUserActivity**
 * Simple to implement
 * Open your app and trigger an action via a shortcut or Hey Siri phrase
 * Little customisation
 
-Intents
+**Intents**
 * More complex than NSUserActivity
 * You can customise the experience for the user
 * Open an app extension in Siri via a Hey Siri phrase
 * Include custom responses from Siri and a custom UI that Siri will present
 
 In this app we use the Intents-based approach. 
+See also https://github.com/russell-archer/PicSearch for an example using an NSUserActivity-based approach.
 
-Overview of the demo app
+## Overview of the demo app
 This is a demo app that allows the user to request a random color. 
 The color can be displayed either:
 
