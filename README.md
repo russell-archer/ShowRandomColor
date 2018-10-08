@@ -1,6 +1,8 @@
 # ShowRandomColor
 **Demo of Siri shortcuts for iOS 12 using Intents**
 
+See my blog for details on how to create the demo app: https://rarchersoftware.com/siri-shortcuts-intents/
+
 ## Overview of how to implement Siri shortcuts
 There are two approaches to creating Siri shortcuts:
 
