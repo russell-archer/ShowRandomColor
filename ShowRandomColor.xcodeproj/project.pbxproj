@@ -7,14 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68077C462167D70C00100784 /* ColorGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 68077C442167D70C00100784 /* ColorGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68077C492167D70C00100784 /* ColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68077C422167D70C00100784 /* ColorGenerator.framework */; };
+		68077C4A2167D70C00100784 /* ColorGenerator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68077C422167D70C00100784 /* ColorGenerator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68077C502167D7F200100784 /* Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68077C4F2167D7F200100784 /* Generate.swift */; };
+		68077C512167DA7800100784 /* ColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68077C422167D70C00100784 /* ColorGenerator.framework */; };
+		68077C522167DA7F00100784 /* ColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68077C422167D70C00100784 /* ColorGenerator.framework */; };
+		6808B803216968B600070118 /* ColorIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6808B802216968B600070118 /* ColorIntentHandler.swift */; };
 		68D7530221678C3D00537594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7530121678C3D00537594 /* AppDelegate.swift */; };
 		68D7530421678C3D00537594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7530321678C3D00537594 /* ViewController.swift */; };
 		68D7530721678C3D00537594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D7530521678C3D00537594 /* Main.storyboard */; };
 		68D7530921678C3E00537594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D7530821678C3E00537594 /* Assets.xcassets */; };
 		68D7530C21678C3E00537594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D7530A21678C3E00537594 /* LaunchScreen.storyboard */; };
+		68D7531B21678D7300537594 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7531A21678D7300537594 /* IntentHandler.swift */; };
+		68D7532421678D7300537594 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D7532321678D7300537594 /* IntentsUI.framework */; };
+		68D7532721678D7300537594 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7532621678D7300537594 /* IntentViewController.swift */; };
+		68D7532A21678D7300537594 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D7532821678D7300537594 /* MainInterface.storyboard */; };
+		68D7532E21678D7300537594 /* ColorIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 68D7532121678D7300537594 /* ColorIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68D7533121678D7300537594 /* ColorIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 68D7531821678D7200537594 /* ColorIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68D7533A21678EF600537594 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 68D7533921678EF600537594 /* Intents.intentdefinition */; };
+		68D7533B216792A600537594 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 68D7533921678EF600537594 /* Intents.intentdefinition */; };
+		68D7533C216792A700537594 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 68D7533921678EF600537594 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		68077C472167D70C00100784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D752F621678C3D00537594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68077C412167D70C00100784;
+			remoteInfo = ColorGenerator;
+		};
+		68D7532C21678D7300537594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D752F621678C3D00537594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D7532021678D7300537594;
+			remoteInfo = ColorIntentUI;
+		};
+		68D7532F21678D7300537594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D752F621678C3D00537594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D7531721678D7200537594;
+			remoteInfo = ColorIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68077C4E2167D70C00100784 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68077C4A2167D70C00100784 /* ColorGenerator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7533821678D7300537594 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				68D7533121678D7300537594 /* ColorIntent.appex in Embed App Extensions */,
+				68D7532E21678D7300537594 /* ColorIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		68077C3B2167CBA300100784 /* ColorIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorIntent.entitlements; sourceTree = "<group>"; };
+		68077C3C2167CC9300100784 /* ColorIntentUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorIntentUI.entitlements; sourceTree = "<group>"; };
+		68077C422167D70C00100784 /* ColorGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68077C442167D70C00100784 /* ColorGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorGenerator.h; sourceTree = "<group>"; };
+		68077C452167D70C00100784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68077C4F2167D7F200100784 /* Generate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generate.swift; sourceTree = "<group>"; };
+		6808B802216968B600070118 /* ColorIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorIntentHandler.swift; sourceTree = "<group>"; };
 		68D752FE21678C3D00537594 /* ShowRandomColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowRandomColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D7530121678C3D00537594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68D7530321678C3D00537594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,23 +95,72 @@
 		68D7530821678C3E00537594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D7530B21678C3E00537594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68D7530D21678C3E00537594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D7531321678C8500537594 /* ShowRandomColor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShowRandomColor.entitlements; sourceTree = "<group>"; };
+		68D7531821678D7200537594 /* ColorIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ColorIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D7531A21678D7300537594 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		68D7531C21678D7300537594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D7532121678D7300537594 /* ColorIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ColorIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D7532321678D7300537594 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		68D7532621678D7300537594 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		68D7532921678D7300537594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		68D7532B21678D7300537594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D7533921678EF600537594 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		68D752FB21678C3D00537594 /* Frameworks */ = {
+		68077C3F2167D70C00100784 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68D752FB21678C3D00537594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68077C492167D70C00100784 /* ColorGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7531521678D7200537594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68077C512167DA7800100784 /* ColorGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7531E21678D7300537594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68077C522167DA7F00100784 /* ColorGenerator.framework in Frameworks */,
+				68D7532421678D7300537594 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68077C432167D70C00100784 /* ColorGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				68077C442167D70C00100784 /* ColorGenerator.h */,
+				68077C452167D70C00100784 /* Info.plist */,
+				68077C4F2167D7F200100784 /* Generate.swift */,
+			);
+			path = ColorGenerator;
+			sourceTree = "<group>";
+		};
 		68D752F521678C3D00537594 = {
 			isa = PBXGroup;
 			children = (
 				68D7530021678C3D00537594 /* ShowRandomColor */,
+				68D7531921678D7300537594 /* ColorIntent */,
+				68D7532521678D7300537594 /* ColorIntentUI */,
+				68077C432167D70C00100784 /* ColorGenerator */,
+				68D7532221678D7300537594 /* Frameworks */,
 				68D752FF21678C3D00537594 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				68D752FE21678C3D00537594 /* ShowRandomColor.app */,
+				68D7531821678D7200537594 /* ColorIntent.appex */,
+				68D7532121678D7300537594 /* ColorIntentUI.appex */,
+				68077C422167D70C00100784 /* ColorGenerator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,19 +179,80 @@
 		68D7530021678C3D00537594 /* ShowRandomColor */ = {
 			isa = PBXGroup;
 			children = (
+				68D7531321678C8500537594 /* ShowRandomColor.entitlements */,
+				68D7533921678EF600537594 /* Intents.intentdefinition */,
+				68D7530D21678C3E00537594 /* Info.plist */,
 				68D7530121678C3D00537594 /* AppDelegate.swift */,
 				68D7530321678C3D00537594 /* ViewController.swift */,
-				68D7530521678C3D00537594 /* Main.storyboard */,
 				68D7530821678C3E00537594 /* Assets.xcassets */,
 				68D7530A21678C3E00537594 /* LaunchScreen.storyboard */,
-				68D7530D21678C3E00537594 /* Info.plist */,
+				68D7530521678C3D00537594 /* Main.storyboard */,
 			);
 			path = ShowRandomColor;
 			sourceTree = "<group>";
 		};
+		68D7531921678D7300537594 /* ColorIntent */ = {
+			isa = PBXGroup;
+			children = (
+				68077C3B2167CBA300100784 /* ColorIntent.entitlements */,
+				68D7531C21678D7300537594 /* Info.plist */,
+				6808B802216968B600070118 /* ColorIntentHandler.swift */,
+				68D7531A21678D7300537594 /* IntentHandler.swift */,
+			);
+			path = ColorIntent;
+			sourceTree = "<group>";
+		};
+		68D7532221678D7300537594 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68D7532321678D7300537594 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68D7532521678D7300537594 /* ColorIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				68077C3C2167CC9300100784 /* ColorIntentUI.entitlements */,
+				68D7532621678D7300537594 /* IntentViewController.swift */,
+				68D7532821678D7300537594 /* MainInterface.storyboard */,
+				68D7532B21678D7300537594 /* Info.plist */,
+			);
+			path = ColorIntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		68077C3D2167D70C00100784 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68077C462167D70C00100784 /* ColorGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		68077C412167D70C00100784 /* ColorGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68077C4B2167D70C00100784 /* Build configuration list for PBXNativeTarget "ColorGenerator" */;
+			buildPhases = (
+				68077C3D2167D70C00100784 /* Headers */,
+				68077C3E2167D70C00100784 /* Sources */,
+				68077C3F2167D70C00100784 /* Frameworks */,
+				68077C402167D70C00100784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorGenerator;
+			productName = ColorGenerator;
+			productReference = 68077C422167D70C00100784 /* ColorGenerator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		68D752FD21678C3D00537594 /* ShowRandomColor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68D7531021678C3E00537594 /* Build configuration list for PBXNativeTarget "ShowRandomColor" */;
@@ -74,15 +260,54 @@
 				68D752FA21678C3D00537594 /* Sources */,
 				68D752FB21678C3D00537594 /* Frameworks */,
 				68D752FC21678C3D00537594 /* Resources */,
+				68D7533821678D7300537594 /* Embed App Extensions */,
+				68077C4E2167D70C00100784 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				68D7532D21678D7300537594 /* PBXTargetDependency */,
+				68D7533021678D7300537594 /* PBXTargetDependency */,
+				68077C482167D70C00100784 /* PBXTargetDependency */,
 			);
 			name = ShowRandomColor;
 			productName = ShowRandomColor;
 			productReference = 68D752FE21678C3D00537594 /* ShowRandomColor.app */;
 			productType = "com.apple.product-type.application";
+		};
+		68D7531721678D7200537594 /* ColorIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D7533521678D7300537594 /* Build configuration list for PBXNativeTarget "ColorIntent" */;
+			buildPhases = (
+				68D7531421678D7200537594 /* Sources */,
+				68D7531521678D7200537594 /* Frameworks */,
+				68D7531621678D7200537594 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorIntent;
+			productName = ColorIntent;
+			productReference = 68D7531821678D7200537594 /* ColorIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		68D7532021678D7300537594 /* ColorIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D7533221678D7300537594 /* Build configuration list for PBXNativeTarget "ColorIntentUI" */;
+			buildPhases = (
+				68D7531D21678D7300537594 /* Sources */,
+				68D7531E21678D7300537594 /* Frameworks */,
+				68D7531F21678D7300537594 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorIntentUI;
+			productName = ColorIntentUI;
+			productReference = 68D7532121678D7300537594 /* ColorIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,8 +319,36 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Russell Archer";
 				TargetAttributes = {
+					68077C412167D70C00100784 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
 					68D752FD21678C3D00537594 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					68D7531721678D7200537594 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					68D7532021678D7300537594 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,11 +366,21 @@
 			projectRoot = "";
 			targets = (
 				68D752FD21678C3D00537594 /* ShowRandomColor */,
+				68D7531721678D7200537594 /* ColorIntent */,
+				68D7532021678D7300537594 /* ColorIntentUI */,
+				68077C412167D70C00100784 /* ColorGenerator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		68077C402167D70C00100784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68D752FC21678C3D00537594 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,19 +391,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68D7531621678D7200537594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7531F21678D7300537594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D7532A21678D7300537594 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		68077C3E2167D70C00100784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68077C502167D7F200100784 /* Generate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68D752FA21678C3D00537594 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D7533A21678EF600537594 /* Intents.intentdefinition in Sources */,
 				68D7530421678C3D00537594 /* ViewController.swift in Sources */,
 				68D7530221678C3D00537594 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68D7531421678D7200537594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D7533B216792A600537594 /* Intents.intentdefinition in Sources */,
+				68D7531B21678D7300537594 /* IntentHandler.swift in Sources */,
+				6808B803216968B600070118 /* ColorIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D7531D21678D7300537594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D7533C216792A700537594 /* Intents.intentdefinition in Sources */,
+				68D7532721678D7300537594 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68077C482167D70C00100784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68077C412167D70C00100784 /* ColorGenerator */;
+			targetProxy = 68077C472167D70C00100784 /* PBXContainerItemProxy */;
+		};
+		68D7532D21678D7300537594 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D7532021678D7300537594 /* ColorIntentUI */;
+			targetProxy = 68D7532C21678D7300537594 /* PBXContainerItemProxy */;
+		};
+		68D7533021678D7300537594 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D7531721678D7200537594 /* ColorIntent */;
+			targetProxy = 68D7532F21678D7300537594 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		68D7530521678C3D00537594 /* Main.storyboard */ = {
@@ -159,9 +483,78 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		68D7532821678D7300537594 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68D7532921678D7300537594 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		68077C4C2167D70C00100784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6BE99W3FU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ColorGenerator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.ColorGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68077C4D2167D70C00100784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R6BE99W3FU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ColorGenerator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.ColorGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		68D7530E21678C3E00537594 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,7 +674,9 @@
 		68D7531121678C3E00537594 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShowRandomColor/ShowRandomColor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6BE99W3FU;
 				INFOPLIST_FILE = ShowRandomColor/Info.plist;
@@ -299,7 +694,9 @@
 		68D7531221678C3E00537594 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShowRandomColor/ShowRandomColor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6BE99W3FU;
 				INFOPLIST_FILE = ShowRandomColor/Info.plist;
@@ -314,9 +711,98 @@
 			};
 			name = Release;
 		};
+		68D7533321678D7300537594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ColorIntentUI/ColorIntentUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6BE99W3FU;
+				INFOPLIST_FILE = ColorIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.ShowRandomColor.ColorIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68D7533421678D7300537594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ColorIntentUI/ColorIntentUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6BE99W3FU;
+				INFOPLIST_FILE = ColorIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.ShowRandomColor.ColorIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68D7533621678D7300537594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ColorIntent/ColorIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6BE99W3FU;
+				INFOPLIST_FILE = ColorIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.ShowRandomColor.ColorIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68D7533721678D7300537594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ColorIntent/ColorIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6BE99W3FU;
+				INFOPLIST_FILE = ColorIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rarcher.ShowRandomColor.ColorIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		68077C4B2167D70C00100784 /* Build configuration list for PBXNativeTarget "ColorGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68077C4C2167D70C00100784 /* Debug */,
+				68077C4D2167D70C00100784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		68D752F921678C3D00537594 /* Build configuration list for PBXProject "ShowRandomColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -331,6 +817,24 @@
 			buildConfigurations = (
 				68D7531121678C3E00537594 /* Debug */,
 				68D7531221678C3E00537594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D7533221678D7300537594 /* Build configuration list for PBXNativeTarget "ColorIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D7533321678D7300537594 /* Debug */,
+				68D7533421678D7300537594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D7533521678D7300537594 /* Build configuration list for PBXNativeTarget "ColorIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D7533621678D7300537594 /* Debug */,
+				68D7533721678D7300537594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="ColorIntentUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKs-v1-9Qx">
+                                <rect key="frame" x="0.0" y="7" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJ7-b6-eLr">
+                                <rect key="frame" x="0.0" y="36" width="320" height="114"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IJ7-b6-eLr" firstAttribute="top" secondItem="oKs-v1-9Qx" secondAttribute="bottom" constant="8" id="CsO-96-YXS"/>
+                            <constraint firstItem="IJ7-b6-eLr" firstAttribute="bottom" secondItem="4PN-XC-lEE" secondAttribute="bottom" id="FKk-nY-QO1"/>
+                            <constraint firstItem="IJ7-b6-eLr" firstAttribute="trailing" secondItem="4PN-XC-lEE" secondAttribute="trailing" id="X70-nH-Szn"/>
+                            <constraint firstItem="IJ7-b6-eLr" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" id="Znk-59-JBT"/>
+                            <constraint firstItem="oKs-v1-9Qx" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" id="eP4-ss-XCm"/>
+                            <constraint firstItem="oKs-v1-9Qx" firstAttribute="trailing" secondItem="4PN-XC-lEE" secondAttribute="trailing" id="t0X-ic-4oh"/>
+                            <constraint firstItem="oKs-v1-9Qx" firstAttribute="top" secondItem="4PN-XC-lEE" secondAttribute="top" constant="7" id="zZf-ZP-gKS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="colorNameLabel" destination="oKs-v1-9Qx" id="eP1-Jq-eiQ"/>
+                        <outlet property="colorView" destination="IJ7-b6-eLr" id="7Ul-Vh-qY2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132.80000000000001" y="133.13343328335833"/>
+        </scene>
+    </scenes>
+</document>
